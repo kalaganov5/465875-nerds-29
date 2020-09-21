@@ -2,9 +2,11 @@
   --c-basic-color: #283136;
   --c-black: #000000;
   --c-black-transparent: rgba(0, 1, 1, 0.1);
+  --c-black-transparent-light: rgba(0, 0, 0, 0.0001);
   --c-basic-red: #FB565A;
   --c-white: #ffffff;
-  --c-red-darker: #E74246;
+  --c-red-dark: #E74246;
+  --c-red-darker: #D7373B;
   --c-white-light: rgba(255,255,255,0.3);
   --c-green: #00CA74;
   --c-green-dark: #00BC6C;
@@ -15,6 +17,7 @@
   --c-gray: #666666;
   --c-gray-dark: #444444;
   --c-gray-light: #EEEEEE;
+  --c-gray-medium: #DBDBDB;
 }
 
 @font-face {
@@ -75,6 +78,7 @@
   clip-path: inset(100%)
 }
 
+/*header start*/
 .main-header {
   background-color: var(--c-gray-light);
 }
@@ -123,20 +127,7 @@
   opacity: 0.3;
   color: var(--c-black);
 }
-
-.main-slogan {
-  color: var(--c-black);
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
-}
-
-.main-slogan-desc {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--c-basic-color);
-}
+/*header end*/
 
 .button {
   background-color: var(--c-basic-red);
@@ -156,12 +147,26 @@ button.button {
 }
 
 .button:hover {
-  background-color: var(--c-red-darker);
+  background-color: var(--c-red-dark);
 }
 
 .button:active {
   color: var(--c-white-light);
   box-shadow: inset 0px 3px 0px var(--c-black-transparent);
+}
+
+.main-slogan {
+  color: var(--c-black);
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.main-slogan-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--c-basic-color);
 }
 
 .offer-item-title {
@@ -235,6 +240,7 @@ button.button {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--c-black);
+  text-align: center;
 }
 
 .about-history-item {
@@ -255,6 +261,8 @@ button.button {
 
 }
 
+
+/* Footer start*/
 .main-footer-title {
   font-weight: bold;
   font-size: 18px;
@@ -293,3 +301,61 @@ button.button {
   font-size: 16px;
   line-height: 22px;
 }
+/*footer end*/
+
+/*calalog.html start*/
+.shop-header {
+  background-color: var(--c-gray-light);
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.shop-header-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--c-black);
+  text-align: center;
+}
+
+.shop-catalog-item-box {
+  background-color: var(--c-gray-light);
+  text-align: center;
+}
+
+.shop-catalog-item-box-title {
+  color: var(--c-black);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.shop-catalog-item-box-desc {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--c-gray);
+}
+
+.shop-catalog-item-box-button:active {
+  color: var(--c-white);
+  background-color: var(--c-red-darker);
+}
+
+.shop-pagination-item {
+  border-radius: 3px;
+  background-color: var(--c-gray-light);
+}
+
+.shop-pagination-item-link {
+  text-decoration: none;
+  color: var(--c-black);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.shop-pagination-item-current {
+  border: 3px solid var(--c-gray-medium);
+  background: var(--c-black-transparent-light);
+}
+/*calalog.html end*/
