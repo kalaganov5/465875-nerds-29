@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <a href="/" class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Проект Нёрдс">
         </a>
@@ -29,91 +29,98 @@
         <a href="" class="main-header-cart">Корзина</a>
       </nav>
     </header>
+
     <main class="shop">
       <div class="shop-header">
         <h1 class="shop-header-title">Магазин готовых шаблонов</h1>
       </div>
-      <section class="shop-filter">
-        <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!--Здесь будет фильтр-->
-      </section>
-      <section class="shop-catalog">
-        <h2 class="visually-hidden">Готовые шаблоны</h2>
-        <!--Здесь будет фильтр-->
-        <ul class="shop-catalog-list">
-          <li class="shop-catalog-item">
-            <img src='img/img-sedona.jpg' width="358" height="578" alt='Главная страницы сайта Sedona'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">Sedona</h3>
-              <p class="shop-catalog-item-box-desc">Информационный сайт для туристов</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="shop-catalog-item">
-            <img src='img/img-pink.jpg' width="358" height="578" alt='Главная страница сайта приложения'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">Pink</h3>
-              <p class="shop-catalog-item-box-desc">Сайт для приложения Pink</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="shop-catalog-item">
-            <img src='img/img-barbershop.jpg' width="358" height="578" alt='Главная страница сайта барбершопа'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">Барбершоп "Borodinski"</h3>
-              <p class="shop-catalog-item-box-desc">Информационный сайт барбершопа</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="shop-catalog-item">
-            <img src='img/img-mishka.jpg' width="358" height="578" alt='Главная страница сайта Mishka'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">Mishka</h3>
-              <p class="shop-catalog-item-box-desc">Сайт по продаже вязанные вещей</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="shop-catalog-item">
-            <img src='img/img-aplus.jpg' width="358" height="578" alt='Сайт обучающей платформы'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">A+</h3>
-              <p class="shop-catalog-item-box-desc">Платформа для обучения специалистов</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="shop-catalog-item">
-            <img src='img/img-kvast.jpg' width="358" height="578" alt='Главная страница Интернет-магазина Кваст'/>
-            <div class="shop-catalog-item-box">
-              <h3 class="shop-catalog-item-box-title">Кваст</h3>
-              <p class="shop-catalog-item-box-desc">Интернет-магазин крафтового кваса</p>
-              <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="shop-pagination-list">
-          <li class="shop-pagination-item shop-pagination-item-current">
-            <a class="shop-pagination-item-link">1</a>
-          </li>
-          <li class="shop-pagination-item">
-            <a href="" class="shop-pagination-item-link">2</a>
-          </li>
-          <li class="shop-pagination-item">
-            <a href="" class="shop-pagination-item-link">3</a>
-          </li>
-          <li class="shop-pagination-item">
-            <a href="" class="shop-pagination-item-link shop-pagination-item-link-next">Следующая</a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <aside class="shop-filter">
+          <h2 class="visually-hidden">Фильтр шаблонов</h2>
+          <!--Здесь будет фильтр-->
+        </aside>
+        <section class="shop-catalog">
+          <h2 class="visually-hidden">Готовые шаблоны</h2>
+          <!--Здесь будет фильтр-->
+          <ul class="shop-catalog-list">
+            <li class="shop-catalog-item">
+              <img src='img/img-sedona.jpg' width="358" height="578" alt='Главная страницы сайта Sedona'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">Sedona</h3>
+                <p class="shop-catalog-item-box-desc">Информационный сайт для туристов</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="shop-catalog-item">
+              <img src='img/img-pink.jpg' width="358" height="578" alt='Главная страница сайта приложения'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">Pink</h3>
+                <p class="shop-catalog-item-box-desc">Сайт для приложения Pink</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="shop-catalog-item">
+              <img src='img/img-barbershop.jpg' width="358" height="578" alt='Главная страница сайта барбершопа'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">Барбершоп "Borodinski"</h3>
+                <p class="shop-catalog-item-box-desc">Информационный сайт барбершопа</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="shop-catalog-item">
+              <img src='img/img-mishka.jpg' width="358" height="578" alt='Главная страница сайта Mishka'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">Mishka</h3>
+                <p class="shop-catalog-item-box-desc">Сайт по продаже вязанные вещей</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="shop-catalog-item">
+              <img src='img/img-aplus.jpg' width="358" height="578" alt='Сайт обучающей платформы'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">A+</h3>
+                <p class="shop-catalog-item-box-desc">Платформа для обучения специалистов</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="shop-catalog-item">
+              <img src='img/img-kvast.jpg' width="358" height="578" alt='Главная страница Интернет-магазина Кваст'/>
+              <div class="shop-catalog-item-box">
+                <h3 class="shop-catalog-item-box-title">Кваст</h3>
+                <p class="shop-catalog-item-box-desc">Интернет-магазин крафтового кваса</p>
+                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="shop-pagination-list">
+            <li class="shop-pagination-item shop-pagination-item-current">
+              <a class="shop-pagination-item-link">1</a>
+            </li>
+            <li class="shop-pagination-item">
+              <a href="" class="shop-pagination-item-link">2</a>
+            </li>
+            <li class="shop-pagination-item">
+              <a href="" class="shop-pagination-item-link">3</a>
+            </li>
+            <li class="shop-pagination-item">
+              <a href="" class="shop-pagination-item-link shop-pagination-item-link-next">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <section class="main-footer-top">
-        <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
-        <address class="main-footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-        <p class="main-footer-tel">тел. <a href="tel:+78122757575" class="main-footer-tel-link">+7 (812) 275-75-75</a></p>
-        <button class="button main-footer-button">Напишите нам</button>
+        <div class="container">
+          <div class="main-footer-top-block-map">
+            <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
+            <address class="main-footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+            <p class="main-footer-tel">тел. <a href="tel:+78122757575" class="main-footer-tel-link">+7 (812) 275-75-75</a></p>
+            <a href="" class="button main-footer-button">Напишите нам</a>
+        </div>
+        </div>
       </section>
-      <div class="main-footer-bottom">
+      <div class="main-footer-bottom container">
         <ul class="main-footer-bottom-list">
           <li class="main-footer-bottom-item">
             <a href="http://vk.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-vk" target="_blank" title="Вконтакте">
