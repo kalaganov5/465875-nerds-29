@@ -6,30 +6,31 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-      <nav class="main-nav container">
-        <a href="/" class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Проект Нёрдс">
-        </a>
-        <ul class="main-nav-list">
-          <li class="main-nav-item">
-            <a href="" class="main-nav-link">Студия</a>
-          </li>
-          <li class="main-nav-item">
-            <a href="" class="main-nav-link">Клиенты</a>
-          </li>
-          <li class="main-nav-item main-nav-item-current">
-            <a class="main-nav-link">Магазин</a>
-          </li>
-          <li class="main-nav-item">
-            <a href="" class="main-nav-link">Контакты</a>
-          </li>
-        </ul>
-        <a href="" class="main-header-cart">Корзина</a>
-      </nav>
+        <nav class="main-nav container">
+          <a href="/" class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Проект Нёрдс">
+          </a>
+          <ul class="main-nav-list">
+            <li class="main-nav-item">
+              <a href="" class="main-nav-link">Студия</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="" class="main-nav-link">Клиенты</a>
+            </li>
+            <li class="main-nav-item main-nav-item-current">
+              <a href="/catalog.html" class="main-nav-link">Магазин</a>
+            </li>
+            <li class="main-nav-item">
+              <a href="" class="main-nav-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-header-cart">
+            <a href="" class="main-header-cart-link">Корзина</a>
+          </div>
+        </nav>
     </header>
-
     <main class="shop">
       <div class="shop-header">
         <h1 class="shop-header-title">Магазин готовых шаблонов</h1>
@@ -44,7 +45,7 @@
           <!--Здесь будет фильтр-->
           <ul class="shop-catalog-list">
             <li class="shop-catalog-item">
-              <img src='img/img-sedona.jpg' width="358" height="578" alt='Главная страницы сайта Sedona'/>
+              <img src="img/img-sedona.jpg" width="358" height="578" alt="Главная страницы сайта Sedona"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">Sedona</h3>
                 <p class="shop-catalog-item-box-desc">Информационный сайт для туристов</p>
@@ -52,7 +53,7 @@
               </div>
             </li>
             <li class="shop-catalog-item">
-              <img src='img/img-pink.jpg' width="358" height="578" alt='Главная страница сайта приложения'/>
+              <img src="img/img-pink.jpg" width="358" height="578" alt="Главная страница сайта приложения"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">Pink</h3>
                 <p class="shop-catalog-item-box-desc">Сайт для приложения Pink</p>
@@ -60,7 +61,7 @@
               </div>
             </li>
             <li class="shop-catalog-item">
-              <img src='img/img-barbershop.jpg' width="358" height="578" alt='Главная страница сайта барбершопа'/>
+              <img src="img/img-barbershop.jpg" width="358" height="578" alt="Главная страница сайта барбершопа"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">Барбершоп "Borodinski"</h3>
                 <p class="shop-catalog-item-box-desc">Информационный сайт барбершопа</p>
@@ -68,7 +69,7 @@
               </div>
             </li>
             <li class="shop-catalog-item">
-              <img src='img/img-mishka.jpg' width="358" height="578" alt='Главная страница сайта Mishka'/>
+              <img src="img/img-mishka.jpg" width="358" height="578" alt="Главная страница сайта Mishka"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">Mishka</h3>
                 <p class="shop-catalog-item-box-desc">Сайт по продаже вязанные вещей</p>
@@ -76,7 +77,7 @@
               </div>
             </li>
             <li class="shop-catalog-item">
-              <img src='img/img-aplus.jpg' width="358" height="578" alt='Сайт обучающей платформы'/>
+              <img src="img/img-aplus.jpg" width="358" height="578" alt="Сайт обучающей платформы"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">A+</h3>
                 <p class="shop-catalog-item-box-desc">Платформа для обучения специалистов</p>
@@ -84,7 +85,7 @@
               </div>
             </li>
             <li class="shop-catalog-item">
-              <img src='img/img-kvast.jpg' width="358" height="578" alt='Главная страница Интернет-магазина Кваст'/>
+              <img src="img/img-kvast.jpg" width="358" height="578" alt="Главная страница Интернет-магазина Кваст"/>
               <div class="shop-catalog-item-box">
                 <h3 class="shop-catalog-item-box-title">Кваст</h3>
                 <p class="shop-catalog-item-box-desc">Интернет-магазин крафтового кваса</p>
@@ -111,13 +112,16 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer-top">
+        <picture class="main-footer-block-map-item">
+          <img src="img/map.jpg" width="1160" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </picture>
         <div class="container">
           <div class="main-footer-top-block-map">
             <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
             <address class="main-footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
             <p class="main-footer-tel">тел. <a href="tel:+78122757575" class="main-footer-tel-link">+7 (812) 275-75-75</a></p>
-            <a href="" class="button main-footer-button">Напишите нам</a>
-        </div>
+            <a href="modal-contact.html" class="button main-footer-button">Напишите нам</a>
+          </div>
         </div>
       </section>
       <div class="main-footer-bottom container">
@@ -125,24 +129,42 @@
           <li class="main-footer-bottom-item">
             <a href="http://vk.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-vk" target="_blank" title="Вконтакте">
               <span class="sr-only">Наша группа в ВК</span>
-              <img src='img/icon-vk.svg' width="26" height="15" alt=''/>
+              <img src="img/icon-vk.svg" width="26" height="15" alt=""/>
             </a>
           </li>
           <li class="main-footer-bottom-item">
             <a href="http://facebook.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-fb" target="_blank" title="Facebook">
               <span class="sr-only">Наша страница на Facebook</span>
-              <img src='img/icon-facebook.svg' width="12" height="22" alt=''/>
+              <img src="img/icon-facebook.svg" width="12" height="22" alt=""/>
             </a>
           </li>
           <li class="main-footer-bottom-item">
             <a href="http://instagram.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-ig" target="_blank" title="Instagram">
               <span class="sr-only">Страница в Instagram</span>
-              <img src='img/icon-insta.svg' width="21" height="21" alt=''/>
+              <img src="img/icon-insta.svg" width="21" height="21" alt=""/>
             </a>
           </li>
         </ul>
         <p class="main-footer-bottom-lead">Давайте дружить, это выгодно! <br><span>Скидка 10% для друзей из социальных сетей.</span></p>
       </div>
     </footer>
+    <section class="modal modal-contact modal-hidden">
+      <h2 class="modal-contact-title">Напишите нам</h2>
+      <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="modal-contact-form-name">
+          Ваше имя:
+          <input type="text" name="input-name" id="modal-contact-form-name" placeholder="Имя Фамилия">
+        </label>
+        <label for="modal-contact-form-email">
+          Ваш email:
+          <input type="email" name="input-email" id="modal-contact-form-email" placeholder="email@example.com">
+        </label>
+        <label for="modal-contact-form-message">Текст письма:
+          <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме"></textarea>
+        </label>
+        <input type="submit" class="button modal-contact-form-button" value="Отправить">
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>

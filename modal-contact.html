@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Напишите нам</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body-modal">
+    <main class="modal modal-contact">
+      <h1 class="modal-contact-title">Напишите нам</h1>
+      <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="modal-contact-form-name">
+          Ваше имя:
+          <input type="text" name="input-name" id="modal-contact-form-name" placeholder="Имя Фамилия">
+        </label>
+        <label for="modal-contact-form-email">
+          Ваш email:
+          <input type="email" name="input-email" id="modal-contact-form-email" placeholder="email@example.com">
+        </label>
+        <label for="modal-contact-form-message">Текст письма:
+          <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме"></textarea>
+        </label>
+        <input type="submit" class="button modal-contact-form-button" value="Отправить">
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    </main>
+  </body>
+</html>

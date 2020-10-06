@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <nav class="main-nav container">
         <a href="" class="main-header-logo">
@@ -26,15 +26,25 @@
             <a href="" class="main-nav-link">Контакты</a>
           </li>
         </ul>
-        <a href="" class="main-header-cart">Корзина</a>
+        <div class="main-header-cart">
+          <a href="" class="main-header-cart-link">Корзина</a>
+        </div>
       </nav>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Nёrds студия веб-дизайна</h1>
       <div class="main-slider-wrap">
         <div class="container">
+          <div class="main-slider-control">
+            <input type="radio" name="mainSlideControl" id="mainSlide-1" value="mainSlide-1" checked>
+            <label for="mainSlide-1"></label>
+            <input type="radio" name="mainSlideControl"  id="mainSlide-2"  value="mainSlide-2">
+            <label for="mainSlide-2"></label>
+            <input type="radio" name="mainSlideControl"  id="mainSlide-3"  value="mainSlide-3">
+            <label for="mainSlide-3"></label>
+          </div>
           <ul class="main-slider-list">
-            <li class="main-slider-item">
+            <li class="main-slider-item main-slider-item-1">
               <ul class="main-slider-item-container">
                 <li class="main-slider-item-container-text">
                   <b class="main-slogan">Долго, дорого,<br>скрупулезно.</b>
@@ -46,7 +56,7 @@
                 </li>
               </ul>
             </li>
-            <li class="main-slider-item">
+            <li class="main-slider-item main-slider-item-hidden">
               <ul class="main-slider-item-container">
                 <li class="main-slider-item-container-text">
                   <b class="main-slogan">Любим математику <br>как никто другой</b>
@@ -58,7 +68,7 @@
                 </li>
               </ul>
             </li>
-            <li class="main-slider-item">
+            <li class="main-slider-item main-slider-item-hidden">
               <ul class="main-slider-item-container">
                 <li class="main-slider-item-container-text">
                   <b class="main-slogan">Только ночь, <br>только хардкор</b>
@@ -71,6 +81,7 @@
               </ul>
             </li>
           </ul>
+
         </div>
       </div>
       <section class="offer container">
@@ -85,7 +96,7 @@
           <li class="offer-item">
             <img src='img/illustration-two-phone.jpg' width="300" height="146" alt='Два телефона на зеленом фоне'/>
             <h3 class="offer-item-title">Приложения</h3>
-            <p class="offer-item-desc">Покорите топ-10 приложений в <br>AppStore и Google Play</p>
+            <p class="offer-item-desc">Покорите топ-10 приложений <br>в AppStore и Google Play</p>
             <a href="" class="button offer-item-button offer-item-button-green">Заказать</a>
           </li>
           <li class="offer-item">
@@ -100,7 +111,7 @@
         <h2 class="visually-hidden">О компании</h2>
         <div class="about-section">
           <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-          <p class="about-lead">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="about-lead">Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h3 class="about-title">Выполняем заказы на разработку:</h3>
           <ul class="about-list">
             <li>Веб-сайтов любой сложности</li>
@@ -130,7 +141,7 @@
         <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="customers-list">
           <li class="customers-item">
-            <a href="" class="customers-item-link">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="customers-item-link">
               <img src='img/logo-htmlacademy.png' width="199" height="67" alt='HTML Academy'/>
             </a>
           </li>
@@ -154,13 +165,16 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer-top">
+        <picture class="main-footer-block-map-item">
+          <img src="img/map.jpg" width="1160" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </picture>
         <div class="container">
           <div class="main-footer-top-block-map">
             <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
             <address class="main-footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
             <p class="main-footer-tel">тел. <a href="tel:+78122757575" class="main-footer-tel-link">+7 (812) 275-75-75</a></p>
-            <a href="" class="button main-footer-button">Напишите нам</a>
-        </div>
+            <a href="modal-contact.html" class="button main-footer-button">Напишите нам</a>
+          </div>
         </div>
       </section>
       <div class="main-footer-bottom container">
@@ -187,5 +201,23 @@
         <p class="main-footer-bottom-lead">Давайте дружить, это выгодно! <br><span>Скидка 10% для друзей из социальных сетей.</span></p>
       </div>
     </footer>
+    <section class="modal modal-contact modal-hidden">
+      <h2 class="modal-contact-title">Напишите нам</h2>
+      <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="modal-contact-form-name">
+          Ваше имя:
+          <input type="text" name="input-name" id="modal-contact-form-name" placeholder="Имя Фамилия">
+        </label>
+        <label for="modal-contact-form-email">
+          Ваш email:
+          <input type="email" name="input-email" id="modal-contact-form-email" placeholder="email@example.com">
+        </label>
+        <label for="modal-contact-form-message">Текст письма:
+          <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме"></textarea>
+        </label>
+        <input type="submit" class="button modal-contact-form-button" value="Отправить">
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
