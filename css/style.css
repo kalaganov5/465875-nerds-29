@@ -65,7 +65,7 @@ body {
 
 .page-body {
   position: relative;
-  min-width: 1160px;
+  min-width: 1180px;
 }
 
 .visually-hidden {
@@ -252,15 +252,9 @@ button.button {
   list-style:none;
 }
 
-/* .main-slider-item {
-  visibility: hidden;
+.main-slider-item {
+  display: none;
 }
-
-#mainSlide-3:checked ~ label{
-  visibility: visible !important;
-  outline-offset: unset;
-  outline: 1px solid red;
-} */
 
 .main-slider-item-container {
   display: grid;
@@ -269,10 +263,6 @@ button.button {
   list-style: none;
   margin:0;
   padding: 0;
-}
-
-.main-slider-item-hidden {
-  display: none;
 }
 
 .main-slider-item-container-text {
@@ -291,7 +281,7 @@ button.button {
   gap: 18px;
 }
 
-.main-slider-control input{
+.main-slider-control-input {
   display: none;
 }
 
@@ -305,7 +295,9 @@ button.button {
   border-radius: 50%;
 }
 
-.main-slider-control input[type="radio"]:checked + label::before{
+#mainSlide-1:checked ~ .main-slider-control label[for="mainSlide-1"]::before,
+#mainSlide-2:checked ~ .main-slider-control label[for="mainSlide-2"]::before,
+#mainSlide-3:checked ~ .main-slider-control label[for="mainSlide-3"]::before{
   content: "";
   height: 4px;
   width: 4px;
@@ -314,6 +306,12 @@ button.button {
   top: 5px;
   border: 2px solid var(--gray-lighter);
   position: absolute;
+}
+
+#mainSlide-1:checked ~ .main-slider-list .main-slider-item-1,
+#mainSlide-2:checked ~ .main-slider-list .main-slider-item-2,
+#mainSlide-3:checked ~ .main-slider-list .main-slider-item-3 {
+  display: block;
 }
 
 .main-slogan-desc-button {
