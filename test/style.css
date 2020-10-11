@@ -1,0 +1,47 @@
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #242424;
+  --basic-dark: #aba9a7;
+  --basic-neutral: #e5e5e5;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
+  --basic-dodgerBlue: #1E90FF;
+  --darkOliveGreen: #556B2F;
+
+  --special: #663d15;
+}
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var( --basic-dodgerBlue);
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(-basic-black);
+    background-color: transparent;
+  }
+  
+  .main-navigation-wrapper {
+    background-color: var(--basic-white);
+  }

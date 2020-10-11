@@ -12,3 +12,12 @@ writeBtn.onclick = function() {
 modalCloseBtn.onclick = function() {
 	modalForm.classList.toggle("modal-hidden");
 }
+
+
+/*hide jpg map and marker*/
+let map = document.querySelector("#main-footer-map");
+map.style.zIndex = "2";
+let mapMarker = document.querySelector(".main-footer-top-block-map");
+mapMarker.classList.add("main-footer-top-block-map-js");
+let containerMap = document.querySelector(".main-footer-top-js");
+containerMap.classList.remove("main-footer-top-js");

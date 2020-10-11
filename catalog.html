@@ -20,15 +20,13 @@
             <a href="" class="main-nav-link">Клиенты</a>
           </li>
           <li class="main-nav-item main-nav-item-current">
-            <a href="/catalog.html" class="main-nav-link">Магазин</a>
+            <a href="catalog.html" class="main-nav-link">Магазин</a>
           </li>
           <li class="main-nav-item">
             <a href="" class="main-nav-link">Контакты</a>
           </li>
         </ul>
-        <div class="main-header-cart">
-          <a href="" class="main-header-cart-link">Корзина</a>
-        </div>
+        <a href="" class="main-header-cart-link">Корзина</a>
       </nav>
     </header>
     <main class="shop">
@@ -38,64 +36,157 @@
       <div class="container">
         <aside class="shop-filter">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <!--Здесь будет фильтр-->
+          <form class="shop-filter-form">
+            <div class="shop-filter-price">
+              <p class="shop-filter-legend">
+                Стоимость:
+              </p>
+              <div class="shop-filter-price-range">
+                <div class="shop-filter-price-bar">
+                  <div class="shop-filter-price-bar-shift"></div>
+                  <div class="shop-filter-price-marker shop-filter-price-marker-left" style="left: -2%;"></div>
+                  <div class="shop-filter-price-marker shop-filter-price-marker-right" style="left: 64%;"></div>
+                </div>
+              </div>
+              <div class="shop-filter-price-input">
+                <label for="shop-filter-price-min">От
+                  <input type="number" min="0" max="15000" name="min-price" id="shop-filter-price-min" class="shop-filter-price-min" value="0">
+                </label>
+                <label for="shop-filter-price-max">До
+                  <input type="number" min="0" max="15000" name="max-price" id="shop-filter-price-max" class="shop-filter-price-max" value="15000">
+                </label>
+              </div>
+            </div>
+            <div class="shop-filter-type">
+              <p class="shop-filter-legend">
+                Сетка:
+              </p>
+              <ul class="shop-filter-type-list">
+                <li class="shop-filter-type-item">
+                  <input type="radio" name="shop-filter-type" class="visually-hidden shop-filter-type-item-input" id="shop-filter-type-adaptivity" checked>
+                  <label for="shop-filter-type-adaptivity">
+                    Адаптивная
+                  </label>
+                </li>
+                <li class="shop-filter-type-item">
+                  <input type="radio" name="shop-filter-type" class="visually-hidden shop-filter-type-item-input" id="shop-filter-type-fixed">
+                  <label for="shop-filter-type-fixed">
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="shop-filter-type-item">
+                  <input type="radio" name="shop-filter-type" class="visually-hidden shop-filter-type-item-input" id="shop-filter-type-flexible">
+                  <label for="shop-filter-type-flexible">
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="shop-filter-features">
+              <p class="shop-filter-legend">
+                Особенности:
+              </p>
+              <ul class="shop-filter-features-list">
+                <li class="shop-filter-features-item">
+                  <input type="checkbox" name="shop-filter-features-checkbox" class="visually-hidden" id="shop-filter-features-slide" checked>
+                  <label for="shop-filter-features-slide">Слайдер</label>
+                </li>
+                <li class="shop-filter-features-item">
+                  <input type="checkbox" name="shop-filter-features-checkbox" class="visually-hidden" id="shop-filter-features-advantage">
+                  <label for="shop-filter-features-advantage">Блок преимуществ</label>
+                </li>
+                <li class="shop-filter-features-item">
+                  <input type="checkbox" name="shop-filter-features-checkbox" class="visually-hidden" id="shop-filter-features-news" checked>
+                  <label for="shop-filter-features-news">Новости</label>
+                </li>
+                <li class="shop-filter-features-item">
+                  <input type="checkbox" name="shop-filter-features-checkbox" class="visually-hidden" id="shop-filter-features-gallery">
+                  <label for="shop-filter-features-gallery">Галерея</label>
+                </li>
+                <li class="shop-filter-features-item">
+                  <input type="checkbox" name="shop-filter-features-checkbox" class="visually-hidden" id="shop-filter-features-trash">
+                  <label for="shop-filter-features-trash">Корзина</label>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="button shop-filter-button">Показать</button>
+          </form>
         </aside>
         <section class="shop-catalog">
           <h2 class="visually-hidden">Готовые шаблоны</h2>
-          <!--Здесь будет фильтр-->
+          <div class="shop-filter-additional">
+            <p class="shop-filter-legend shop-filter-additional-legend">
+              Сортировать:
+            </p>
+            <form action="" method="get" class="shop-filter-additional-form">
+              <ul class="shop-filter-additional-list">
+                <li class="shop-filter-additional-item">
+                  <button type="button" class="shop-filter-additional-item-button shop-filter-additional-item-button-active">По цене</button>
+                </li>
+                <li class="shop-filter-additional-item">
+                  <button type="button" class="shop-filter-additional-item-button">По типу</button>
+                </li>
+                <li class="shop-filter-additional-item">
+                  <button type="button" class="shop-filter-additional-item-button">По названию</button>
+                </li>
+              </ul>
+              <button type="button" class="shop-filter-additional-order-button shop-filter-additional-order-button-bottom shop-filter-additional-order-active" aria-label="Фильтр вниз"></button>
+              <button type="button" class="shop-filter-additional-order-button shop-filter-additional-order-button-top" aria-label="Фильтр вверх"></button>
+            </form>
+          </div>
           <ul class="shop-catalog-list">
             <li class="shop-catalog-item">
               <img src="img/img-sedona.jpg" width="358" height="578" alt="Главная страницы сайта Sedona"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">Sedona</h3>
-                <p class="shop-catalog-item-box-desc">Информационный сайт для туристов</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">Sedona</a></h3>
+                <p class="shop-catalog-item-box-desc">Информационный сайт<br>для туристов</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
             <li class="shop-catalog-item">
               <img src="img/img-pink.jpg" width="358" height="578" alt="Главная страница сайта приложения"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">Pink</h3>
-                <p class="shop-catalog-item-box-desc">Сайт для приложения Pink</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">Pink App</a></h3>
+                <p class="shop-catalog-item-box-desc">Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
             <li class="shop-catalog-item">
               <img src="img/img-barbershop.jpg" width="358" height="578" alt="Главная страница сайта барбершопа"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">Барбершоп "Borodinski"</h3>
-                <p class="shop-catalog-item-box-desc">Информационный сайт барбершопа</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">Barbershop</a></h3>
+                <p class="shop-catalog-item-box-desc">Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
             <li class="shop-catalog-item">
               <img src="img/img-mishka.jpg" width="358" height="578" alt="Главная страница сайта Mishka"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">Mishka</h3>
-                <p class="shop-catalog-item-box-desc">Сайт по продаже вязанные вещей</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">Mishka</a></h3>
+                <p class="shop-catalog-item-box-desc">Интернет-магазин<br>вязаных игрушек</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
             <li class="shop-catalog-item">
               <img src="img/img-aplus.jpg" width="358" height="578" alt="Сайт обучающей платформы"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">A+</h3>
-                <p class="shop-catalog-item-box-desc">Платформа для обучения специалистов</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">A Plus</a></h3>
+                <p class="shop-catalog-item-box-desc">Лендинг курсов повышения квалификации</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
             <li class="shop-catalog-item">
               <img src="img/img-kvast.jpg" width="358" height="578" alt="Главная страница Интернет-магазина Кваст"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title">Кваст</h3>
-                <p class="shop-catalog-item-box-desc">Интернет-магазин крафтового кваса</p>
+                <h3 class="shop-catalog-item-box-title"><a href="">Кваст</a></h3>
+                <p class="shop-catalog-item-box-desc">Промо-сайт производителя<br>крафтового кваса</p>
                 <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
           </ul>
           <ul class="shop-pagination-list">
-            <li class="shop-pagination-item shop-pagination-item-current">
-              <a class="shop-pagination-item-link">1</a>
+            <li class="shop-pagination-item">
+              <a class="shop-pagination-item-link shop-pagination-item-link-current">1</a>
             </li>
             <li class="shop-pagination-item">
               <a href="" class="shop-pagination-item-link">2</a>
@@ -104,17 +195,16 @@
               <a href="" class="shop-pagination-item-link">3</a>
             </li>
             <li class="shop-pagination-item">
-              <a href="" class="shop-pagination-item-link shop-pagination-item-link-next">Следующая</a>
+              <a href="" class="shop-pagination-item-link shop-pagination-item-button">Следующая</a>
             </li>
           </ul>
         </section>
       </div>
     </main>
     <footer class="main-footer">
-      <section class="main-footer-top">
-        <picture class="main-footer-block-map-item">
-          <img src="img/map.jpg" width="1160" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </picture>
+      <section class="main-footer-top main-footer-top-js">
+        <iframe class="main-footer-block-map-item" id="main-footer-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716136502!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1602437181931!5m2!1sen!2sru" width="100%" height="415" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <img class="main-footer-block-map-item" src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <div class="container">
           <div class="main-footer-top-block-map">
             <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
@@ -127,22 +217,13 @@
       <div class="main-footer-bottom container">
         <ul class="main-footer-bottom-list">
           <li class="main-footer-bottom-item">
-            <a href="http://vk.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-vk" target="_blank" title="Вконтакте">
-              <span class="sr-only">Наша группа в ВК</span>
-              <img src="img/icon-vk.svg" width="26" height="15" alt=""/>
-            </a>
+            <a href="http://vk.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-vk" target="_blank" aria-label="Наша группа в ВК"></a>
           </li>
           <li class="main-footer-bottom-item">
-            <a href="http://facebook.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-fb" target="_blank" title="Facebook">
-              <span class="sr-only">Наша страница на Facebook</span>
-              <img src="img/icon-facebook.svg" width="12" height="22" alt=""/>
-            </a>
+            <a href="http://facebook.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-fb" target="_blank" aria-label="Наша страница на Facebook"></a>
           </li>
           <li class="main-footer-bottom-item">
-            <a href="http://instagram.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-ig" target="_blank" title="Instagram">
-              <span class="sr-only">Страница в Instagram</span>
-              <img src="img/icon-insta.svg" width="21" height="21" alt=""/>
-            </a>
+            <a href="http://instagram.com" class="main-footer-bottom-item-link main-footer-bottom-item-link-ig" target="_blank" aria-label="Страница в Instagram"></a>
           </li>
         </ul>
         <p class="main-footer-bottom-lead">Давайте дружить, это выгодно! <br><span>Скидка 10% для друзей из социальных сетей.</span></p>
@@ -162,7 +243,7 @@
         <label for="modal-contact-form-message">Текст письма:
           <textarea id="modal-contact-form-message" rows="5" name="input-message"  placeholder="В свободной форме"></textarea>
         </label>
-        <input type="submit" class="button modal-contact-form-button" value="Отправить">
+        <button type="submit" class="button modal-contact-form-button">Отправить</button>
       </form>
       <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
