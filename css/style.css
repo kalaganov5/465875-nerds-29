@@ -1535,9 +1535,10 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
   color: var(--gray-dark);
 }
 
-.modal-contact-form input:not(.modal-contact-form-button):invalid,
-.modal-contact-form textarea:invalid {
+.modal-contact-form input:not(.modal-contact-form-button).invalid,
+.modal-contact-form textarea.invalid {
   border-color: var(--red-dark);
+  transition: 0.25s;
 }
 
 .modal-contact-form-button {

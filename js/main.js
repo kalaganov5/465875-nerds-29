@@ -29,3 +29,47 @@ let mapMarker = document.querySelector(".main-footer-top-block-map");
 mapMarker.classList.add("main-footer-top-block-map-js");
 let containerMap = document.querySelector(".main-footer-top-js");
 containerMap.classList.remove("main-footer-top-js");
+
+/*check form input*/
+const formInputName = document.querySelector("#modal-contact-form-name");
+const formInputEmail = document.querySelector("#modal-contact-form-email");
+const formTextarea = document.querySelector("#modal-contact-form-message");
+
+//check name
+formInputName.onblur = function() {
+  if (!this.value) {
+    this.classList.add('invalid');
+  }
+};
+
+formInputName.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    this.classList.remove('invalid');
+  }
+};
+
+//check email
+formInputEmail.onblur = function() {
+  if (!this.value.includes('@')) { // не email
+    this.classList.add('invalid');
+  }
+};
+
+formInputEmail.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    this.classList.remove('invalid');
+  }
+};
+
+//check message
+formTextarea.onblur = function() {
+  if (!this.value) {
+    this.classList.add('invalid');
+  }
+};
+
+formTextarea.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    this.classList.remove('invalid');
+  }
+};
