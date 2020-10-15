@@ -77,7 +77,7 @@ body {
 
 .page-body {
   position: relative;
-  min-width: 1180px;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -90,22 +90,10 @@ body {
   width: 1px;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0,0,0,0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%)
-}
-
 .container {
   width: 1160px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -428,6 +416,7 @@ button.button {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-color);
+  margin-right: 25px;
 }
 
 .offer-item-button {
@@ -489,6 +478,7 @@ button.button {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-color);
+  margin-right: 15px;
 }
 .about-title {
   font-weight: 700;
@@ -912,7 +902,7 @@ button.button {
 .shop-filter-price-input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
+  column-gap: 34px;
 }
 
 .shop-filter-price label {
@@ -945,7 +935,7 @@ button.button {
 }
 
 .shop-filter-price-min, .shop-filter-price-max {
-  width: 80px;
+  width: 77px;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-color);
@@ -1121,13 +1111,17 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
   flex-basis: 400px;
 }
 
-.shop-filter-additional-form {
+.shop-filter-additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-basis: 360px;
+  flex-wrap: wrap;
+  flex-basis: 300px;
   align-items: center;
 }
 
-.shop-filter-additional-form button {
+.shop-filter-additional-list a {
   background: none;
   border:none;
   padding: 0;
@@ -1135,29 +1129,51 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
   line-height: 18px;
   color: var(--black);
   text-transform: uppercase;
+  text-decoration: none;
   opacity: 0.3;
-  cursor: pointer;
 }
 
-.shop-filter-additional-form button:hover {
+.shop-filter-additional-list a:hover {
   opacity: 0.6;
 }
 
-.shop-filter-additional-form button:active,
-.shop-filter-additional-form .shop-filter-additional-item-button-active {
+.shop-filter-additional-list a:active,
+.shop-filter-additional-list .shop-filter-additional-item-button-active {
   opacity: 1;
 }
 
-.shop-filter-additional-form .shop-filter-additional-order-button-bottom {
+.shop-filter-additional-list-direction {
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 43px;
+}
+
+.shop-filter-additional-list-direction li {
+  margin-bottom: 5px;
+}
+
+.shop-filter-additional-list-direction .shop-filter-additional-order-button {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.shop-filter-additional-list-direction-item:nth-child(2)
+.shop-filter-additional-order-button {
+  margin-right: 0;
+}
+
+.shop-filter-additional-list-direction .shop-filter-additional-order-button-bottom {
   border-top: 12px solid var(--gray-dark-A6A6A6);
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  margin-left: auto;
-  margin-right: 15px;
   opacity: 0.2;
 }
 
-.shop-filter-additional-form .shop-filter-additional-order-button-top {
+.shop-filter-additional-list-direction .shop-filter-additional-order-button-top {
   border-top: 12px solid var(--gray-dark-A6A6A6);
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -1165,23 +1181,15 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
   transform: rotate(180deg);
 }
 
-.shop-filter-additional-form .shop-filter-additional-order-active {
-  border-top-color: var(--gray-dark-231F20);
+.shop-filter-additional-order-button-top:hover,
+.shop-filter-additional-order-button-bottom:hover {
+  border-top-color: var(--gray-dark-A6A6A6);
   opacity: 1;
 }
 
-.shop-filter-additional-form .shop-filter-additional-order-button-top:hover,
-.shop-filter-additional-form .shop-filter-additional-order-button-bottom:hover {
+.shop-filter-additional-list-direction .shop-filter-additional-order-active {
   border-top-color: var(--gray-dark-231F20);
   opacity: 1;
-}
-
-.shop-filter-additional-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .shop-filter-additional-item:not(:last-child) {
@@ -1257,7 +1265,9 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
   bottom: 0;
   width: 100%;
   min-height: 231px;
-  padding: 10px 30px 10px 30px;
+  max-height: 400px;
+  overflow: auto;
+  padding: 10px 50px;
   box-sizing: border-box;
   opacity: 0;
 }

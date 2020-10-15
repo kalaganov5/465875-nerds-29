@@ -4,29 +4,29 @@
     <meta charset="utf-8">
     <title>Магазин Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <header class="main-header">
       <nav class="main-nav container">
-        <a href="/" class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Проект Нёрдс">
         </a>
         <ul class="main-nav-list">
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">Студия</a>
+            <a href="#" class="main-nav-link">Студия</a>
           </li>
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">Клиенты</a>
+            <a href="#" class="main-nav-link">Клиенты</a>
           </li>
           <li class="main-nav-item main-nav-item-current">
-            <a href="catalog.html" class="main-nav-link">Магазин</a>
+            <a class="main-nav-link">Магазин</a>
           </li>
           <li class="main-nav-item">
-            <a href="" class="main-nav-link">Контакты</a>
+            <a href="#" class="main-nav-link">Контакты</a>
           </li>
         </ul>
-        <a href="" class="main-header-cart-link">Корзина</a>
+        <a href="#" class="main-header-cart-link">Корзина</a>
       </nav>
     </header>
     <main class="shop">
@@ -118,69 +118,73 @@
             <p class="shop-filter-legend shop-filter-additional-legend">
               Сортировать:
             </p>
-            <form action="https://echo.htmlacademy.ru/" method="get" class="shop-filter-additional-form">
-              <ul class="shop-filter-additional-list">
-                <li class="shop-filter-additional-item">
-                  <button type="submit" class="shop-filter-additional-item-button shop-filter-additional-item-button-active">По цене</button>
-                </li>
-                <li class="shop-filter-additional-item">
-                  <button type="submit" class="shop-filter-additional-item-button">По типу</button>
-                </li>
-                <li class="shop-filter-additional-item">
-                  <button type="submit" class="shop-filter-additional-item-button">По названию</button>
-                </li>
-              </ul>
-              <button type="submit" class="shop-filter-additional-order-button shop-filter-additional-order-button-bottom shop-filter-additional-order-active" aria-label="Фильтр вниз"></button>
-              <button type="submit" class="shop-filter-additional-order-button shop-filter-additional-order-button-top" aria-label="Фильтр вверх"></button>
-            </form>
+            <ul class="shop-filter-additional-list">
+              <li class="shop-filter-additional-item">
+                <a class="shop-filter-additional-item-button shop-filter-additional-item-button-active">По цене</a>
+              </li>
+              <li class="shop-filter-additional-item">
+                <a href="#" class="shop-filter-additional-item-button">По типу</a>
+              </li>
+              <li class="shop-filter-additional-item">
+                <a href="#" class="shop-filter-additional-item-button">По названию</a>
+              </li>
+            </ul>
+            <ul class="shop-filter-additional-list-direction">
+              <li class="shop-filter-additional-list-direction-item">
+                <a class="shop-filter-additional-order-button shop-filter-additional-order-button-bottom shop-filter-additional-order-active" aria-label="Фильтр вниз"></a>
+              </li>
+              <li class="shop-filter-additional-list-direction-item">
+                <a href="#" class="shop-filter-additional-order-button shop-filter-additional-order-button-top" aria-label="Фильтр вверх"></a>
+              </li>
+            </ul>
           </div>
           <ul class="shop-catalog-list">
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-sedona.jpg" width="358" height="578" alt="Главная страницы сайта Sedona"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">Sedona</a></h3>
-                <p class="shop-catalog-item-box-desc">Информационный сайт<br>для туристов</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <h3 class="shop-catalog-item-box-title"><a href="#">Sedona</a></h3>
+                <p class="shop-catalog-item-box-desc">Информационный сайт для&nbsp;туристов</p>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-pink.jpg" width="358" height="578" alt="Главная страница сайта приложения"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">Pink App</a></h3>
-                <p class="shop-catalog-item-box-desc">Продуктовый лендинг<br>приложения для iOS и Android</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <h3 class="shop-catalog-item-box-title"><a href="#">Pink App</a></h3>
+                <p class="shop-catalog-item-box-desc">Продуктовый лендинг приложения&nbsp;для iOS и Android</p>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-barbershop.jpg" width="358" height="578" alt="Главная страница сайта барбершопа"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">Barbershop</a></h3>
-                <p class="shop-catalog-item-box-desc">Сайт салона красоты.<br>Для мужчин, да.</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <h3 class="shop-catalog-item-box-title"><a href="#">Barbershop</a></h3>
+                <p class="shop-catalog-item-box-desc">Сайт салона красоты. Для&nbsp;мужчин, да.</p>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-mishka.jpg" width="358" height="578" alt="Главная страница сайта Mishka"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">Mishka</a></h3>
+                <h3 class="shop-catalog-item-box-title"><a href="#">Mishka</a></h3>
                 <p class="shop-catalog-item-box-desc">Интернет-магазин<br>вязаных игрушек</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-aplus.jpg" width="358" height="578" alt="Сайт обучающей платформы"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">A Plus</a></h3>
+                <h3 class="shop-catalog-item-box-title"><a href="#">A Plus</a></h3>
                 <p class="shop-catalog-item-box-desc">Лендинг курсов повышения квалификации</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
-            <li class="shop-catalog-item" tabindex="0">
+            <li class="shop-catalog-item">
               <img src="img/img-kvast.jpg" width="358" height="578" alt="Главная страница Интернет-магазина Кваст"/>
               <div class="shop-catalog-item-box">
-                <h3 class="shop-catalog-item-box-title"><a href="">Кваст</a></h3>
+                <h3 class="shop-catalog-item-box-title"><a href="#">Кваст</a></h3>
                 <p class="shop-catalog-item-box-desc">Промо-сайт производителя<br>крафтового кваса</p>
-                <a href="" class="button shop-catalog-item-box-button">9 900 ₽</a>
+                <a href="#" class="button shop-catalog-item-box-button">9 900 ₽</a>
               </div>
             </li>
           </ul>
@@ -189,13 +193,13 @@
               <a class="shop-pagination-item-link shop-pagination-item-link-current">1</a>
             </li>
             <li class="shop-pagination-item">
-              <a href="" class="shop-pagination-item-link">2</a>
+              <a href="#" class="shop-pagination-item-link">2</a>
             </li>
             <li class="shop-pagination-item">
-              <a href="" class="shop-pagination-item-link">3</a>
+              <a href="#" class="shop-pagination-item-link">3</a>
             </li>
             <li class="shop-pagination-item">
-              <a href="" class="shop-pagination-item-link shop-pagination-item-button">Следующая</a>
+              <a href="#" class="shop-pagination-item-link shop-pagination-item-button">Следующая</a>
             </li>
           </ul>
         </section>
@@ -208,7 +212,7 @@
         <div class="container">
           <div class="main-footer-top-block-map">
             <h2 class="main-footer-title">NЁRDS DESIGN STUDIO</h2>
-            <address class="main-footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+            <address class="main-footer-address">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</address>
             <p class="main-footer-tel">тел. <a href="tel:+78122757575" class="main-footer-tel-link">+7 (812) 275-75-75</a></p>
             <a href="modal-contact.html" class="button main-footer-button">Напишите нам</a>
           </div>
@@ -247,6 +251,6 @@
       </form>
       <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
