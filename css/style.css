@@ -286,7 +286,6 @@ button.button {
   bottom: 96px;
   display: flex;
   justify-content: center;
-  gap: 18px;
 }
 
 .main-slider-control label {
@@ -298,6 +297,10 @@ button.button {
   width: 18px;
   background-color: var(--white);
   border-radius: 50%;
+}
+
+.main-slider-control label:not(:last-child) {
+  margin-right: 18px;
 }
 
 #main-slide-1:checked ~ .main-slider-control label[for="main-slide-1"]::before,
