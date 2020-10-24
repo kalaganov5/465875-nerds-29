@@ -25,8 +25,6 @@ modalCloseBtn.onclick = function(evt) {
 /*hide jpg map and marker*/
 let map = document.querySelector("#main-footer-map");
 map.style.zIndex = "2";
-let mapMarker = document.querySelector(".main-footer-top-block-map");
-mapMarker.classList.add("main-footer-top-block-map-js");
 let containerMap = document.querySelector(".main-footer-top-js");
 containerMap.classList.remove("main-footer-top-js");
 
@@ -38,38 +36,38 @@ const formTextarea = document.querySelector("#modal-contact-form-message");
 //check name
 formInputName.onblur = function() {
   if (!this.value) {
-    this.classList.add('invalid');
+    this.classList.add("invalid");
   }
 };
 
 formInputName.onfocus = function() {
-  if (this.classList.contains('invalid')) {
-    this.classList.remove('invalid');
+  if (this.classList.contains("invalid")) {
+    this.classList.remove("invalid");
   }
 };
 
 //check email
 formInputEmail.onblur = function() {
-  if (!this.value.includes('@')) { // не email
-    this.classList.add('invalid');
+  if (!this.value.includes("@")) { // не email
+    this.classList.add("invalid");
   }
 };
 
 formInputEmail.onfocus = function() {
-  if (this.classList.contains('invalid')) {
-    this.classList.remove('invalid');
+  if (this.classList.contains("invalid")) {
+    this.classList.remove("invalid");
   }
 };
 
 //check message
 formTextarea.onblur = function() {
   if (!this.value) {
-    this.classList.add('invalid');
+    this.classList.add("invalid");
   }
 };
 
 formTextarea.onfocus = function() {
-  if (this.classList.contains('invalid')) {
-    this.classList.remove('invalid');
+  if (this.classList.contains("invalid")) {
+    this.classList.remove("invalid");
   }
 };

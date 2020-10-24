@@ -658,6 +658,19 @@ button.button {
   margin-bottom: 44px;
 }
 
+.main-footer-top .container::before {
+  content: "";
+  width: 231px;
+  height: 190px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 85px;
+  right: 265px;
+  z-index: 1;
+}
+
 .main-footer-top-js {
   max-width: 1440px;
   margin-right: auto;
@@ -686,22 +699,6 @@ button.button {
   padding-top: 35px;
   padding-bottom: 10px;
   z-index: 3;
-}
-
-.main-footer-top-block-map::after {
-  content: "";
-  width: 231px;
-  height: 190px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: absolute;
-  top: 85px;
-  right: 258px;
-}
-
-.main-footer-top-block-map-js::after {
-  display: none;
 }
 
 .main-footer-title {
@@ -918,7 +915,7 @@ button.button {
   align-items: center;
 }
 
-.shop-filter-price input[type='number'] {
+.shop-filter-price input[type="number"] {
   -moz-appearance:textfield;
 }
 
@@ -1162,6 +1159,7 @@ input[name="shop-filter-features-checkbox"]:disabled + label::before {
 .shop-filter-additional-list-direction .shop-filter-additional-order-button {
   display: inline-block;
   margin-right: 7px;
+  vertical-align: middle;
 }
 
 .shop-filter-additional-list-direction-item:nth-child(2)
