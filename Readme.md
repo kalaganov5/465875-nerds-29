@@ -1,7 +1,8 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Володя Калаганов](https://up.htmlacademy.ru/htmlcss/29/user/465875).
-* Наставник: `[Владислав Кривокора](https://htmlacademy.ru/profile/krivokora)`.
+* Наставник: [Владислав Кривокора](https://htmlacademy.ru/profile/krivokora).
+* Посмотреть [сайт](https://kalaganov5.github.io/465875-nerds-29/)
 
 ---
 
